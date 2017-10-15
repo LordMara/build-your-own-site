@@ -105,7 +105,6 @@ body {
 }
 .col-content {
   width: 70%;
-  margin-bottom: 20px;
 }
 
 /*
@@ -297,6 +296,7 @@ a:hover {
   background: #fff;
   border: 5px double #000080;
   border-radius: 50px;
+  margin-bottom: 20px;
   color: #000;
   line-height: 30px;
   padding: 22px 80px 66px 80px;
