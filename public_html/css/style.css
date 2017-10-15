@@ -419,11 +419,11 @@ textarea {
 
 /*
   ==================================================
-  Social media
+  Side notes
   ==================================================
 */
 
-.social-media {
+.side-notes {
   background: #fff;
   border: 5px double #000080;
   border-radius: 15px;
@@ -431,9 +431,20 @@ textarea {
   padding: 0 10px 22px 10px;
   text-align: center;
 }
-.social-media a {
+.side-notes a {
   font-size: 18px;
   font-weight: 400;
-  padding-left: 20px;
   text-align: center;
+}
+
+/*
+  ==================================================
+  Impresive videos
+  ==================================================
+*/
+
+.video-player {
+  margin-left: 60px;
+  height: 315px;
+  width: 560px;
 }
