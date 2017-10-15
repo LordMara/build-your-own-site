@@ -214,6 +214,31 @@ a:hover {
 }
 
 /*
+  ================================================
+  Buttons
+  ================================================
+*/
+
+.btn {
+  background: #000080;
+  border: 1px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 60px;
+  text-transform: uppercase;
+}
+.btn:hover {
+  background: #3b44be;
+}
+.btn-send {
+  margin: 0 38%;
+}
+
+/*
   =================================================
   Primary header
   =================================================
@@ -239,7 +264,7 @@ a:hover {
 }
 .motto {
   font-weight: 400;
-  margin: 50px 0 50px 0;
+  margin: 50px 0;
   text-align: left;
 }
 .motto h2 {
@@ -262,11 +287,10 @@ a:hover {
   text-transform: uppercase;
 }
 .primary-nav a {
-  padding: 0 25px 0 25px;
+  padding: 0 25px;
 }
 .primary-nav a:hover {
   background: linear-gradient(#9c9ca1, #3b44be);
-  box-shadow: inset 100px 100px 100px 100px rgba(0, 0, 0, .3);
 }
 
 /*
@@ -317,8 +341,11 @@ a:hover {
 .content ul {
   list-style-type: disc;
 }
-#exercise-summary {
+#beginig {
   text-indent: 30px;
+}
+.center-text {
+  text-align: center;
 }
 
 /*
@@ -342,4 +369,71 @@ a:hover {
   height: 200px;
   margin: -100px 0 22px 0;
   vertical-align: top;
+}
+.creator-info a {
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 20px;
+  text-align: center;
+}
+
+/*
+  =======================================================
+  Contact
+  =======================================================
+*/
+
+form {
+  margin-bottom: 22px;
+}
+input,
+select,
+textarea {
+  font: 400 18px/24px "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.contact label {
+  cursor: pointer;
+  margin-left: 15%;
+  font-weight: 400;
+}
+.contact input,
+.contact textarea {
+  border: 2px solid #000080;
+  border-radius: 5px;
+  display: block;
+  margin: 0 15% 22px 15%;
+  text-align: center;
+  width: 70%;
+}
+.contact input:default,
+.contact textarea:default {
+  color: #888;
+}
+.contact textarea {
+  height: 80px;
+  padding: 5px 10px;
+}
+.map {
+  width: 100%;
+}
+
+/*
+  ==================================================
+  Social media
+  ==================================================
+*/
+
+.social-media {
+  background: #fff;
+  border: 5px double #000080;
+  border-radius: 15px;
+  color: #000;
+  padding: 0 10px 22px 10px;
+  text-align: center;
+}
+.social-media a {
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 20px;
+  text-align: center;
 }
