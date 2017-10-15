@@ -3,21 +3,25 @@
     <head>
         <meta charset="utf-8">
         <title>My first website</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,400,400i,700,900"> 
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
 
-        <header>
+        <header class="primary-header container group">
 
             <h1 class="logo">
-                    <a href="index.html">First<br>website</a>
+                <a href="index.html">First<br>website</a>
             </h1>
 
-            <h2>Make front-end assigment from Codecool</h2>
+            <div class="motto">
+                <h2>Make front-end assigment from Codecool</h2>
+                
+                <p>Improvise. Adapt. Overcome.</p>
+            </div>
 
-            <p>Improvise. Adapt. Overcome.</p>
-
-            <nav>
+            <nav class="nav primary-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li><!--
                     --><li><a href="contact.html">Contact</a></li><!--
@@ -28,131 +32,179 @@
 
         </header>
 
-        <section>
-            <div class="content">
-                <h2>Build your own site</h2>
+        <section class="row">
+            <div class="grid">
+                <section class="col-content content">
+                    <h2>Build your own site (part 1)</h2>
 
-                <p>In this exercise you need to create your own web page. Use all what you've already learnt.</p>
+                    <h3 id="exercise-summary">In this exercise you need to create your own web page. Use all what you've already learnt.</h3>
+                    
+                    <h4>There are some requirement you should fulfil:</h4>
+
+                    <ul>
+                        <li>The page should contain at least 3 subpages.</li>
+                        <li>It's html should be W3C valid.</li>
+                        <li>It should contain properly used HTML5 (new) elements</li>
+                        <li>It should contain a navigation menu</li>
+                        <li>It should contain a contact page with a form to send email to the author 
+                            (you don't need to create server side logic, only the front end)</li>
+                        <li>Optional: It should contain a welcome screening which displays an animation</li>
+                        <li><strong>DO NOT use any CSS frameworks (e.g. Bootstrap)</strong></li>
+                        <li>Remember to use sources (images, sounds etc.) only with proper usage rights, 
+                            labeled 'for reuse', and give attribution to the original author. 
+                            You can find many websites with free photos and graphics to commercial use, 
+                            e.g. <a href="https://pixabay.com/">pixabay</a></li>
+                    </ul>
+
+                </section><!--
+                    
+                --><aside class="col-side-notes">
+                    <div class="creator-info">
+                        <img src="images/home/marcin-ogorzalek.jpg" alt="Marcin Ogorzalek">
+
+                        <h3><strong>Creator of this website</strong></h3>
+
+                        <h4>Marcin Ogorzalek</h4>
+
+                        <p>I am Codecool Cracow student taking my first steps in programming. 
+                            Before that I have ended AGH UST with Master of Science degree 
+                            at Faculty of Drilling, Oil and Gas.</p>
+
+                        <p>I have not much experience but I am eager to learn.</p>
+
+                    </div>
+                </aside>
+
+                <section class="col-content content">
+                    <h2>Build your own site (part 2)</h2>
+
+                    <h3>Step by step:</h3>
+
+                    <ol>
+                        <li>Setup repository</li>
+                        <li>Create your index page</li>
+                        <li>Make it nice</li>
+                        <li>Create a contact page</li>
+                        <li>Create your custom pages</li>
+                        <li>Validate your pages</li>
+                    </ol>
+
+                </section>
+
+                <section class="col-content content">
+                    <h2>Build your own site (part 3)</h2>
+
+                    <h3>Setup repository</h3>
+
+                    <ol>
+                        <li>Create a new GitHub repository for your site with <b>README.md</b> file</li>
+                        <li>Add <b>.ignore</b> file to it if needed</li>
+                        <li>Clone the repository to your machine</li>
+                    </ol>
+
+                </section>
+
+                <section class="col-content content">
+                    <h2>Build your own site (part 4)</h2>
+
+                    <h3>Create your index page</h3>
+
+                    <ol>
+                        <li>Before you start coding sketch up how your web pages should look like. 
+                            You can do it on paper or with any wire frame application. This is your choice. 
+                            The purpose is to visualize that what different sections and 
+                            parts will be in your page and how should they be arranged.</li>
+                        <li>Create a new html file in your repository root directory named: <b>index.html</b></li>
+                        <li>Set the doctype to HTML5 form</li>
+                        <li>Add &#60;head&#62; part and setup basic meta data and the &#60;title&#62; of the page</li>
+                        <li>Add &#60;body&#62; part</li>
+                        <li>Add &#60;header&#62; to the body which will contain &#60;nav&#62;igation menu. 
+                            The first item of this should be a link to this page.</li>
+                        <li>Add a &#60;div&#62; element to the body which has a class named: <b>content</b>. 
+                            This will contain the part of the pages which differs from each other.</li>
+                        <li>Add an image of you and a small introduction next to it about yourself.</li>
+                        <li>Add some content to it (e.g. the description of the exercise) to see where will it be. 
+                            You can fill it with arbitrary content. 
+                            Take care to use the different html tags properly so it can express your intent.</li>
+                        <li>Add &#60;footer&#62; and add some content to it. Take example from other sites.</li>
+                        <li>After you finish commit your changes into your repository with a descriptive comment.</li>
+                    </ol>
+
+                </section>
+
+                <section class="col-content content">
+                    <h2>Build your own site (part 5)</h2>
+
+                    <h3>Make it nice</h3>
+
+                    <ol>
+                        <li>Create a new folder named css in your repository's root directory</li>
+                        <li>Create a <b>style.css</b> file in that newly created folder. 
+                            This will contain all your rules about your site's appearance.</li>
+                        <li>Add a reference to it in your <b>index.html</b> file's head part.</li>
+                        <li>Define basic rules for the body element. (Default background, font, alignment...) 
+                            These rules are inherited in the child elements (every element which located inside the body).</li>
+                        <li>Write css rules to make all the site like your sketch.</li>
+                    </ol>
+
+                </section>
+
+                <section class="col-content content">
+                    <h2>Build your own site (part 6)</h2>
+
+                    <h3>Create a contact page</h3>
+
+                    <ol>
+                        <li>Copy your <b>index.html</b> file and give it the name: <b>contact.html</b></li>
+                        <li>Add a link to your navigation menu which redirects to this html page</li>
+                        <li>Delete the inner content of <strong>div.content</strong> element</li>
+                        <li>Create a form inside it</li>
+                        <li>Add two &#60;input&#62; field and a &#60;textarea&#62; field to the form and proper &#60;label&#62;s to them. 
+                            The first input field is the name which has a placeholder text: Enter your name. 
+                            The second input field is the email with placeholder text: Give your email. 
+                            The textarea will contain the message so give some handful instruction in the placeholder text. 
+                            Do not forget add named all your form element.</li>
+                        <li>Add a submit button wich should has the text <b>SEND</b> on it. It should be disabled by default.</li>
+                        <li>Open your <b>style.css</b> file and at the bottom of it and write some rules which makes it nice. 
+                            (e.g. horizontally centered and the fields has the same width). 
+                            You can see an example on the <a href="https://codecool.pl/kontakt/">https://codecool.pl/kontakt/</a> web site. 
+                            Maybe it is familiar to you. ;)</li>
+                        <li>Commit your changes into your repository.</li> 
+                    </ol>
+
+                </section>
+
+                <section class="col-content content">
+                    <h2>Build your own site (part 7)</h2>
+
+                    <h3>Create your custom pages</h3>
+
+                    <ol>
+                        <li>Create your new html file(s) based on the <b>index.html</b></li>
+                        <li>Add the proper link to the navigation menu on every other html files.</li>
+                        <li>Fill it with custom content</li>
+                        <li>Extend your stylesheet if needed</li>
+                        <li>Do not forget to commit and push your changes into your repository!</li>
+                    </ol>
+
+                </section>
+
+                <section class="col-content content">
+                    <h2>Build your own site (part 8)</h2>
+
+                    <h3>Validate your pages</h3>
+
+                    <ol>
+                        <li>Go to <a href="https://validator.w3.org/">https://validator.w3.org/</a></li>
+                        <li>Validate your sites</li>
+                        <li>Fix the issues</li>
+                    </ol>
                 
-                <p>There are some requirement you should fulfil:</p>
-
-                <ul>
-                    <li>The page should contain at least 3 subpages.</li>
-                    <li>It's html should be W3C valid.</li>
-                    <li>It should contain properly used HTML5 (new) elements</li>
-                    <li>It should contain a navigation menu</li>
-                    <li>It should contain a contact page with a form to send email to the author 
-                        (you don't need to create server side logic, only the front end)</li>
-                    <li>Optional: It should contain a welcome screening which displays an animation</li>
-                    <li><strong>DO NOT use any CSS frameworks (e.g. Bootstrap)</strong></li>
-                    <li>Remember to use sources (images, sounds etc.) only with proper usage rights, 
-                        labeled 'for reuse', and give attribution to the original author. 
-                        You can find many websites with free photos and graphics to commercial use, 
-                        e.g. <a href="https://pixabay.com/">pixabay</a></li>
-                </ul>
-
-                <h3>Step by step:</h3>
-
-                <h4>Setup repository</h4>
-
-                <ol>
-                    <li>Create a new GitHub repository for your site with <b>README.md</b> file</li>
-                    <li>Add <b>.ignore</b> file to it if needed</li>
-                    <li>Clone the repository to your machine</li>
-                </ol>
-
-                <h4>Create your index page</h4>
-
-                <ol>
-                    <li>Before you start coding sketch up how your web pages should look like. 
-                        You can do it on paper or with any wire frame application. This is your choice. 
-                        The purpose is to visualize that what different sections and 
-                        parts will be in your page and how should they be arranged.</li>
-                    <li>Create a new html file in your repository root directory named: <b>index.html</b></li>
-                    <li>Set the doctype to HTML5 form</li>
-                    <li>Add &#60;head&#62; part and setup basic meta data and the &#60;title&#62; of the page</li>
-                    <li>Add &#60;body&#62; part</li>
-                    <li>Add &#60;header&#62; to the body which will contain &#60;nav&#62;igation menu. 
-                        The first item of this should be a link to this page.</li>
-                    <li>Add a &#60;div&#62; element to the body which has a class named: <b>content</b>. 
-                        This will contain the part of the pages which differs from each other.</li>
-                    <li>Add an image of you and a small introduction next to it about yourself.</li>
-                    <li>Add some content to it (e.g. the description of the exercise) to see where will it be. 
-                        You can fill it with arbitrary content. 
-                        Take care to use the different html tags properly so it can express your intent.</li>
-                    <li>Add &#60;footer&#62; and add some content to it. Take example from other sites.</li>
-                    <li>After you finish commit your changes into your repository with a descriptive comment.</li>
-                </ol>
-
-                <h4>Make it nice</h4>
-
-                <ol>
-                    <li>Create a new folder named css in your repository's root directory</li>
-                    <li>Create a <b>style.css</b> file in that newly created folder. 
-                        This will contain all your rules about your site's appearance.</li>
-                    <li>Add a reference to it in your <b>index.html</b> file's head part.</li>
-                    <li>Define basic rules for the body element. (Default background, font, alignment...) 
-                        These rules are inherited in the child elements (every element which located inside the body).</li>
-                    <li>Write css rules to make all the site like your sketch.</li>
-                </ol>
-
-                <h4>Create a contact page</h4>
-
-                <ol>
-                    <li>Copy your <b>index.html</b> file and give it the name: <b>contact.html</b></li>
-                    <li>Add a link to your navigation menu which redirects to this html page</li>
-                    <li>Delete the inner content of <strong>div.conten</strong>t element</li>
-                    <li>Create a form inside it</li>
-                    <li>Add two &#60;input&#62; field and a &#60;textarea&#62; field to the form and proper &#60;label&#62;s to them. 
-                        The first input field is the name which has a placeholder text: Enter your name. 
-                        The second input field is the email with placeholder text: Give your email. 
-                        The textarea will contain the message so give some handful instruction in the placeholder text. 
-                        Do not forget add named all your form element.</li>
-                    <li>Add a submit button wich should has the text <b>SEND</b> on it. It should be disabled by default.</li>
-                    <li>Open your <b>style.css</b> file and at the bottom of it and write some rules which makes it nice. 
-                        (e.g. horizontally centered and the fields has the same width). 
-                        You can see an example on the <a href="https://codecool.pl/kontakt/">https://codecool.pl/kontakt/</a> web site. 
-                        Maybe it is familiar to you. ;)</li>
-                    <li>Commit your changes into your repository.</li> 
-                </ol>
-
-                <h4>Create your custom pages</h4>
-
-                <ol>
-                    <li>Create your new html file(s) based on the <b>index.html</b></li>
-                    <li>Add the proper link to the navigation menu on every other html files.</li>
-                    <li>Fill it with custom content</li>
-                    <li>Extend your stylesheet if needed</li>
-                    <li>Do not forget to commit and push your changes into your repository!</li>
-                </ol>
-
-                <h4>Validate your pages</h4>
-
-                <ol>
-                    <li>Go to <a href="https://validator.w3.org/">https://validator.w3.org/</a></li>
-                    <li>Validate your sites</li>
-                    <li>Fix the issues</li>
-                </ol>
-            </div><!--
-
-          --><aside class="side-notes">
-                <div>
-                    <img src="images/home/marcin-ogorzalek.jpg" alt="Marcin Ogorzalek">
-
-                    <h3><strong>Creator of this website</strong></h3>
-
-                    <h4>Marcin Ogorzalek</h4>
-
-                    <p>I am Codecool Cracow student taking my first steps in programming. 
-                        Before that I have ended AGH UST with Master of Science degree 
-                        at Faculty of Drilling, Oil and Gas. <br>
-                        I have not much experience but I am eager to learn.</p>
-
-                </div>
-            </aside>
+                </section>
+            </div>
         </section>
 
-        <footer>
+        <footer class="primary-footer container group">
             <small>&copy; Marcin Ogorzalek 2017</small>
                 
             <nav class="nav">

@@ -1,0 +1,345 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ================================================
+  Custom styles
+  ================================================
+*/
+
+body {
+  background: #000080;
+  color: #fff;
+  font: 300 16px/22px "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.primary-header a,
+.primary-footer a {
+  color: #fff;
+}
+.primary-header a:hover,
+.primary-footer a:hover {
+  color: #cacaca;
+}
+
+/*
+  ===============================================
+  Grid
+  ===============================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.container,
+.grid {
+  margin: 0 auto;
+  width: 1280px;
+}
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.grid,
+.col-side-notes,
+.col-content {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-side-notes,
+.col-content {
+  display: inline-block;
+  vertical-align: top;
+}
+.col-side-notes {
+  width: 30%;
+}
+.col-content {
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+/*
+  =================================================
+  Clearfix
+  =================================================
+*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
+  ================================================
+  Rows
+  ================================================
+*/
+
+.row {
+  background: #e0dede;
+  min-width: 1280px;
+  padding: 66px 0 44px 0;
+}
+
+/*
+  ================================================
+  Typography
+  ================================================
+*/
+
+h1, h2, h3, h4, h5, p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+h1, h2, h3 {
+  font-weight: 900;
+}
+h1 {
+  font-size: 40px;
+  line-height: 50px;
+}
+h2 {
+  font-size: 30px;
+  line-height: 46px;
+}
+h3 {
+  font-size: 26px;
+}
+h4 {
+  font-size: 22px;
+  font-weight: 400;
+}
+p {
+  font-size: 18px;
+  font-weight: 400;
+}
+b, strong {
+  font-weight: 700;
+}
+cite, em {
+  font-style: italic;
+}
+small {
+  font-weight: 100;
+}
+
+/*
+  ================================================
+  Links
+  ================================================
+*/
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #404cca;
+}
+
+/*
+  ===================================================
+  Navigation
+  ===================================================
+*/
+
+.nav {
+  text-align: right;
+  font-weight: 400;
+}
+.nav li {
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: top;
+}
+.nav li:last-child {
+  margin-right: 0;
+}
+
+/*
+  =================================================
+  Primary header
+  =================================================
+*/
+
+.logo {
+  border-left: 10px solid #e2a127;
+  border-top: 10px solid #e2a127;
+  float: left;
+  font-size: 50px;
+  font-weight: 900;
+  letter-spacing: .9px;
+  line-height: 60px;
+  margin-right: 50px;
+  padding: 20px 0 30px 5px;
+  text-transform: uppercase;
+}
+.logo a {
+  color: #e2a127;
+}
+.logo a:hover {
+  color: #c58b20;
+}
+.motto {
+  font-weight: 400;
+  margin: 50px 0 50px 0;
+  text-align: left;
+}
+.motto h2 {
+  color: #e2a127;
+  font-size: 30px;
+  font-weight: 900;
+}
+.motto p {
+  font-size: 20px;
+  word-spacing: 5px;
+}
+.primary-nav {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  margin: 100px 75px 20px 75px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.primary-nav a {
+  padding: 0 25px 0 25px;
+}
+.primary-nav a:hover {
+  background: linear-gradient(#9c9ca1, #3b44be);
+  box-shadow: inset 100px 100px 100px 100px rgba(0, 0, 0, .3);
+}
+
+/*
+  =================================================
+  Primary footer
+  =================================================
+*/
+
+.primary-footer {
+  color: #fff;
+  font-size: 12px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.primary-footer small {
+  float: left;
+  font-weight: 400;
+}
+
+/*
+  ================================================
+  Content
+  ================================================
+*/
+
+.content {
+  background: #fff;
+  border: 5px double #000080;
+  border-radius: 50px;
+  color: #000;
+  line-height: 30px;
+  padding: 22px 80px 66px 80px;
+}
+.content h2 {
+  font-size: 36px;
+  text-align: center;
+}
+.content ul,
+.content ol {
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 20px;
+}
+.content ol {
+  list-style-type: decimal;
+}
+.content ul {
+  list-style-type: disc;
+}
+#exercise-summary {
+  text-indent: 30px;
+}
+
+/*
+  ==================================================
+  Creator
+  ==================================================
+*/
+
+.creator-info {
+  background: #fff;
+  border: 5px double #000080;
+  border-radius: 15px;
+  color: #000;
+  margin-top: 88px;
+  padding: 0 10px 22px 10px;
+  text-align: center;
+}
+.creator-info img {
+  border: 2px solid #000080;
+  border-radius: 25%;
+  height: 200px;
+  margin: -100px 0 22px 0;
+  vertical-align: top;
+}
