@@ -173,9 +173,7 @@ p {
 b, strong {
   font-weight: 700;
 }
-quoteblock,
-cite, 
-em {
+cite, em {
   font-style: italic;
 }
 small {
